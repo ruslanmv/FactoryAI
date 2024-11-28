@@ -1,0 +1,9 @@
+[submodule "src/platfom/Factory-App-AI"]
+	path = src/platfom/Factory-App-AI
+	url = https://github.com/ruslanmv/Factory-App-AI
+[submodule "src/platfom/Factory-Feature"]
+	path = src/platfom/Factory-Feature
+	url = https://github.com/ruslanmv/Factory-Feature
+[submodule "src/platfom/Factory-Debug"]
+	path = src/platfom/Factory-Debug
+	url = https://github.com/ruslanmv/Factory-Debug
