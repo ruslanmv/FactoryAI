@@ -46,8 +46,9 @@ Factory-Feature is a project that leverages Generative AI with **WatsonX.ai** to
 - **Language and Framework Agnostic**: Supports a wide range of programming languages and frameworks.
 
 By automating tedious tasks and maintaining project coherence, Factory-Feature enables rapid and reliable customization of software projects.
-
+> *Note: This project implements the Feature-Factory algorithm as referenced in [arXiv:2411.18226](https://arxiv.org/abs/2411.18226).*
 ---
+
 
 ### 3. **Factory-Debug** (Coming Soon)
 Factory-Debug is a groundbreaking tool designed to transform the debugging process using AI. By analyzing provided code, Factory-Debug identifies bugs, diagnoses issues, and autonomously attempts to fix them. This tool aims to save developers time and effort, offering a streamlined solution for resolving coding problems.
