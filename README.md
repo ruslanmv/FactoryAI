@@ -79,8 +79,27 @@ Clone the main repository and initialize submodules to access all components of 
 ```bash
 git clone --recurse-submodules https://github.com/ruslanmv/FactoryAI.git
 cd FactoryAI
+
 ```
 
+### Syncronization of modules
+
+**Make the Script Executable**
+   - Open a terminal in the repository's root directory and run the following command:
+     ```bash
+     chmod +x sync.sh
+     ```
+
+**Run the Script**
+   - Execute the script to synchronize all submodules:
+     ```bash
+     ./sync.sh
+     ```
+
+4. **Verify the Results**
+   - After running the script:
+     - All submodules will be cloned or updated in the `src` folder.
+     - Check the `src` directory to confirm all submodules are present and up to date.
 ---
 
 ## Stay Tuned!
