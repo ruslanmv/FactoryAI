@@ -1,124 +1,494 @@
-# FactoryAI Suite (Coming Soon)
+# FactoryAI Suite
 
-![alt text](./assets/logo-small.jpg)
+![FactoryAI Logo](./assets/logo-small.jpg)
 
-**FactoryAI** is a cutting-edge suite of AI-powered tools designed to empower developers, scientists, and businesses in building and managing software projects from inception to production. Unlike traditional code generation assistants, FactoryAI is a comprehensive suite that provides an end-to-end solution for creating, enhancing, and debugging software.
+[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-The suite consists of three core programs, each addressing a distinct phase of the software development lifecycle:
+**FactoryAI** is a cutting-edge suite of AI-powered tools designed to revolutionize software development. Unlike traditional code generation assistants, FactoryAI provides a comprehensive, end-to-end solution for creating, enhancing, and debugging software projects autonomously.
 
-1. [Factory-App-AI](https://github.com/ruslanmv/Factory-App-AI)
-2. [Factory-Feature](https://github.com/ruslanmv/Factory-Feature)
-3. [Factory-Debug](https://github.com/ruslanmv/Factory-Debug)
+The suite consists of three core components, each addressing a distinct phase of the software development lifecycle:
 
----
-
-## Components of the FactoryAI Suite
-
-### 1. **Factory-App-AI**
-Factory-App-AI is an innovative application that enables users to dynamically generate project structures and code using generative AI models, including ChatGPT by OpenAI. It provides a user-friendly interface powered by **Gradio** to define project requirements, generate files, validate outputs, and containerize projects for deployment. 
-
-This program streamlines project development, offering an automated workflow to build applications while allowing for manual adjustments for optimal functionality.
-
-**Key Features:**
-- **Dynamic Project Tree Generation**: Generate project structures based on user input and selected frameworks.
-- **File Generation**: Automatically create files with dependency handling.
-- **File Validation**: Ensure generated files are valid and meet dependency requirements.
-- **File Explorer**: Inspect and browse generated files.
-- **Containerization**: Automatically generate Dockerfiles and package projects as zip files for deployment.
-- **Interactive Gradio Interface**: Provides a guided user experience for project creation.
-
-> *Note: This project implements the Standard Method as referenced in [arXiv:2411.10861](https://arxiv.org/abs/2411.10861).*
+1. **[Factory-App-AI](https://github.com/ruslanmv/Factory-App-AI)** - Dynamic project generation
+2. **[Factory-Feature](https://github.com/ruslanmv/Factory-Feature)** - Intelligent feature integration
+3. **[Factory-Debug](https://github.com/ruslanmv/Factory-Debug)** - AI-powered debugging (Coming Soon)
 
 ---
 
-### 2. **Factory-Feature**
-Factory-Feature is a project that leverages Generative AI with **WatsonX.ai** to analyze the structure and components of an existing project. By utilizing a **Vector Database**, it efficiently retrieves project elements and updates them based on user-provided feature requests.
+## 🚀 Features
 
-**How It Works:**
-- The original project resides in a `project_old` folder.
-- The updated project, with new features integrated, is saved in a `project_new` folder.
+### Complete Development Automation
+- **End-to-End Pipeline**: From initial project scaffolding to production-ready deployment
+- **AI-Powered Intelligence**: Leverages state-of-the-art models (OpenAI ChatGPT, IBM WatsonX.ai)
+- **Modular Architecture**: Use components independently or as an integrated suite
+- **Production-Ready**: Industry-standard code quality, type hints, comprehensive documentation
 
-**Key Features:**
-- **Generative AI-Powered Customization**: Uses WatsonX.ai LLM to analyze projects and intelligently integrate requested features.
-- **Vector Database Creation**: Efficiently retrieves and analyzes project components.
-- **Context-Aware Feature Integration**: Ensures coherent incorporation of new features.
-- **Streamlined Project Updates**: Automates modifications and updates to software projects.
-- **Language and Framework Agnostic**: Supports a wide range of programming languages and frameworks.
+### Component Highlights
 
-By automating tedious tasks and maintaining project coherence, Factory-Feature enables rapid and reliable customization of software projects.
-> *Note: This project implements the Feature-Factory algorithm as referenced in [arXiv:2411.18226](https://arxiv.org/abs/2411.18226).*
----
+#### Factory-App-AI
+- Dynamic project structure generation
+- Automated file creation with dependency handling
+- Built-in validation and containerization
+- Interactive Gradio interface
+- **Based on**: [arXiv:2411.10861](https://arxiv.org/abs/2411.10861) - Standard Method
 
+#### Factory-Feature
+- Context-aware feature integration
+- Vector database for efficient code retrieval
+- Framework and language agnostic
+- Seamless project enhancement workflow
+- **Based on**: [arXiv:2411.18226](https://arxiv.org/abs/2411.18226) - Feature-Factory Algorithm
 
-### 3. **Factory-Debug** (Coming Soon)
-Factory-Debug is a groundbreaking tool designed to transform the debugging process using AI. By analyzing provided code, Factory-Debug identifies bugs, diagnoses issues, and autonomously attempts to fix them. This tool aims to save developers time and effort, offering a streamlined solution for resolving coding problems.
-
-**Key Features:**
-- **AI-Powered Debugging**: Automatically detect and fix bugs in your code.
-- **Autonomous Code Analysis**: Understand program logic to effectively diagnose issues.
-- **Iterative Debugging Workflow**: Suggests and applies fixes while improving code quality iteratively.
-- **Customizable Solutions**: Refine AI-generated fixes to enhance accuracy and functionality.
-- **Developer-Friendly Interface**: Simple, intuitive interaction for seamless debugging.
-
-> *Note: Factory-Debug is currently under development. Stay tuned for updates!*
-
----
-
-## How It Works
-
-The **FactoryAI Suite** uses a modular approach with three interrelated tools. Each program serves a specific purpose, yet they work together to provide a cohesive development experience:
-1. Use **Factory-App-AI** to generate the foundation of your software project.
-2. Enhance or modify the project with **Factory-Feature** to add custom functionality.
-3. Debug and refine your project using **Factory-Debug** for production-ready solutions.
+#### Factory-Debug
+- Autonomous bug detection and fixing
+- Iterative debugging workflow
+- AI-powered code analysis
+- Customizable solution refinement
 
 ---
 
-## Getting Started
+## 📋 Table of Contents
 
-Clone the main repository and initialize submodules to access all components of the FactoryAI suite:
+- [About](#about)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Components](#components)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+
+---
+
+## 🎯 About
+
+FactoryAI Suite is designed for developers, scientists, and businesses who want to:
+
+- **Accelerate Development**: Automate repetitive tasks and focus on innovation
+- **Maintain Quality**: Generate production-ready code with best practices
+- **Scale Efficiently**: Handle projects of any size with AI-powered assistance
+- **Reduce Errors**: Leverage AI for debugging and code analysis
+
+Built on cutting-edge research and industry best practices, FactoryAI represents the future of software development automation.
+
+---
+
+## 🔧 Installation
+
+### Prerequisites
+
+- **Python**: 3.9 or higher
+- **Git**: For submodule management
+- **uv**: Fast Python package installer ([Install uv](https://github.com/astral-sh/uv))
 
 ```bash
+# Install uv (if not already installed)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+### Installation Methods
+
+#### Method 1: Using Make (Recommended)
+
+```bash
+# Clone the repository
 git clone --recurse-submodules https://github.com/ruslanmv/FactoryAI.git
 cd FactoryAI
 
+# Install FactoryAI
+make install
+
+# Synchronize submodules
+make sync
+
+# Validate installation
+make validate
 ```
 
-### Syncronization of modules
+#### Method 2: Using uv directly
 
-**Make the Script Executable**
-   - Open a terminal in the repository's root directory and run the following command:
-     ```bash
-     chmod +x sync.sh
-     ```
+```bash
+# Clone the repository
+git clone https://github.com/ruslanmv/FactoryAI.git
+cd FactoryAI
 
-**Run the Script**
-   - Execute the script to synchronize all submodules:
-     ```bash
-     ./sync.sh
-     ```
+# Install with uv
+uv pip install -e .
 
-4. **Verify the Results**
-   - After running the script:
-     - All submodules will be cloned or updated in the `src` folder.
-     - Check the `src` directory to confirm all submodules are present and up to date.
+# Synchronize submodules
+chmod +x sync.sh
+./sync.sh
+
+# Validate installation
+factoryai validate
+```
+
+#### Method 3: Development Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ruslanmv/FactoryAI.git
+cd FactoryAI
+
+# Complete development setup
+make dev-setup
+
+# Or manually:
+uv pip install -e ".[dev]"
+./sync.sh
+```
+
 ---
 
-## Stay Tuned!
+## ⚡ Quick Start
 
-The **FactoryAI Suite** is under active development. Follow our progress and get ready for the future of AI-driven software development. For updates, visit [ruslanmv.com](https://ruslanmv.com).
+After installation, verify everything is working:
+
+```bash
+# Check FactoryAI status
+factoryai status
+
+# View available components
+factoryai list
+
+# Get installation info
+factoryai info
+```
+
+Run a component:
+
+```bash
+# Run Factory-App-AI
+factoryai run app
+
+# Run Factory-Feature
+factoryai run feature
+
+# Or use Make shortcuts
+make run-app
+make run-feature
+```
 
 ---
 
-## Repository Structure
+## 📖 Usage
 
-The FactoryAI suite includes the following submodules:
+### Command-Line Interface
 
-- **[Factory-App-AI](https://github.com/ruslanmv/Factory-App-AI)**: For dynamic project generation.
-- **[Factory-Feature](https://github.com/ruslanmv/Factory-Feature)**: For project feature integration and updates.
-- **[Factory-Debug](https://github.com/ruslanmv/Factory-Debug)**: For AI-powered debugging and auto-fixing.
+FactoryAI provides a unified CLI for all operations:
+
+```bash
+factoryai [command] [options]
+```
+
+#### Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `sync` | Synchronize all git submodules |
+| `status` | Show status of all components |
+| `info` | Display installation information |
+| `validate` | Validate installation and dependencies |
+| `list` | List all available components |
+| `run <component>` | Run a specific component (app, feature, debug) |
+
+#### Examples
+
+```bash
+# Synchronize submodules
+factoryai sync
+
+# Check component status
+factoryai status
+
+# Validate installation
+factoryai validate
+
+# Run Factory-App-AI
+factoryai run app
+
+# Run with verbose output
+factoryai --verbose status
+
+# Get help
+factoryai --help
+factoryai run --help
+```
+
+### Makefile Targets
+
+For convenience, common operations are available via Make:
+
+```bash
+# Show all available targets
+make help
+
+# Installation and setup
+make install          # Install FactoryAI
+make install-dev      # Install with dev dependencies
+make sync             # Sync submodules
+make dev-setup        # Complete dev environment setup
+
+# Development workflow
+make format           # Format code (black, isort, ruff)
+make lint             # Run linters (ruff, mypy)
+make test             # Run tests
+make test-cov         # Run tests with coverage
+make check            # Run lint + test
+make pre-commit       # Run format + lint + test
+
+# Component execution
+make run-app          # Run Factory-App-AI
+make run-feature      # Run Factory-Feature
+make run-debug        # Run Factory-Debug
+
+# Utilities
+make status           # Check component status
+make validate         # Validate installation
+make clean            # Clean build artifacts
+make build            # Build distribution packages
+```
 
 ---
 
-### License
+## 🧩 Components
 
-This project is licensed under the [Apache 2.0 License](LICENSE).
+### 1. Factory-App-AI
+
+**Dynamic Project Generation with Generative AI**
+
+Factory-App-AI enables rapid project scaffolding using AI models. It generates complete project structures, files, and configurations based on user requirements.
+
+**Key Features:**
+- AI-powered project tree generation
+- Automatic dependency resolution
+- File validation and verification
+- Docker containerization support
+- Interactive Gradio web interface
+
+**Usage:**
+```bash
+factoryai run app
+# or
+make run-app
+```
+
+**Repository**: [Factory-App-AI](https://github.com/ruslanmv/Factory-App-AI)
+
+---
+
+### 2. Factory-Feature
+
+**Intelligent Feature Integration for Existing Projects**
+
+Factory-Feature analyzes your existing codebase and seamlessly integrates new features while maintaining project coherence and style.
+
+**Key Features:**
+- Context-aware code analysis
+- Vector database for efficient retrieval
+- Framework and language agnostic
+- Automated project updates
+- Maintains code consistency
+
+**Workflow:**
+```
+project_old/ → Analysis → Feature Integration → project_new/
+```
+
+**Usage:**
+```bash
+factoryai run feature
+# or
+make run-feature
+```
+
+**Repository**: [Factory-Feature](https://github.com/ruslanmv/Factory-Feature)
+
+---
+
+### 3. Factory-Debug
+
+**AI-Powered Debugging and Auto-Fixing** *(Coming Soon)*
+
+Factory-Debug automatically detects bugs, analyzes code logic, and provides or applies fixes autonomously.
+
+**Planned Features:**
+- Autonomous bug detection
+- AI-powered code analysis
+- Iterative debugging workflow
+- Customizable fix suggestions
+- Developer-friendly interface
+
+**Repository**: [Factory-Debug](https://github.com/ruslanmv/Factory-Debug)
+
+---
+
+## 🛠️ Development
+
+### Setting Up Development Environment
+
+```bash
+# Clone repository
+git clone https://github.com/ruslanmv/FactoryAI.git
+cd FactoryAI
+
+# Setup development environment
+make dev-setup
+
+# Or manually:
+uv pip install -e ".[dev]"
+./sync.sh
+```
+
+### Code Quality Standards
+
+FactoryAI adheres to strict code quality standards:
+
+- **PEP 8**: Python code style guide compliance
+- **Type Hints**: Full type annotation coverage
+- **Docstrings**: Comprehensive documentation for all modules, classes, and functions
+- **Testing**: Comprehensive test coverage with pytest
+- **Linting**: Automated checks with ruff and mypy
+- **Formatting**: Consistent code style with black and isort
+
+### Running Quality Checks
+
+```bash
+# Format code
+make format
+
+# Run linters
+make lint
+
+# Run tests
+make test
+
+# Run tests with coverage
+make test-cov
+
+# Run all checks
+make check
+```
+
+### Project Structure
+
+```
+FactoryAI/
+├── factoryai/              # Main package
+│   ├── __init__.py         # Package initialization
+│   ├── cli.py              # Command-line interface
+│   ├── config.py           # Configuration management
+│   ├── core.py             # Core orchestration logic
+│   ├── exceptions.py       # Custom exceptions
+│   └── utils.py            # Utility functions
+├── tests/                  # Test suite
+│   ├── __init__.py
+│   ├── test_cli.py
+│   ├── test_config.py
+│   ├── test_core.py
+│   └── test_utils.py
+├── src/platfom/            # Submodules directory
+│   ├── Factory-App-AI/     # Factory-App-AI submodule
+│   ├── Factory-Feature/    # Factory-Feature submodule
+│   └── Factory-Debug/      # Factory-Debug submodule
+├── assets/                 # Assets (logos, images)
+├── pyproject.toml          # Project configuration (uv standard)
+├── Makefile                # Build automation
+├── README.md               # This file
+├── LICENSE                 # Apache 2.0 License
+├── .gitignore              # Git ignore rules
+└── sync.sh                 # Submodule sync script
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes with proper tests and documentation
+4. Run quality checks (`make check`)
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
+
+### Contribution Guidelines
+
+- Follow PEP 8 style guidelines
+- Add type hints to all functions
+- Write comprehensive docstrings
+- Include tests for new features
+- Update documentation as needed
+
+---
+
+## 📄 License
+
+This project is licensed under the **Apache License 2.0** - see the [LICENSE](LICENSE) file for details.
+
+```
+Copyright 2024 Ruslan Magana
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+---
+
+## 👤 Author
+
+**Ruslan Magana**
+
+- Website: [ruslanmv.com](https://ruslanmv.com)
+- GitHub: [@ruslanmv](https://github.com/ruslanmv)
+- Email: contact@ruslanmv.com
+
+---
+
+## 🌟 Acknowledgments
+
+- OpenAI for ChatGPT API
+- IBM for WatsonX.ai platform
+- Research papers:
+  - [arXiv:2411.10861](https://arxiv.org/abs/2411.10861) - Standard Method for Factory-App-AI
+  - [arXiv:2411.18226](https://arxiv.org/abs/2411.18226) - Feature-Factory Algorithm for Factory-Feature
+
+---
+
+## 📊 Project Status
+
+- **Factory-App-AI**: ✅ Active Development
+- **Factory-Feature**: ✅ Active Development
+- **Factory-Debug**: 🚧 Coming Soon
+
+---
+
+## 🔗 Links
+
+- [Documentation](https://github.com/ruslanmv/FactoryAI#readme)
+- [Issue Tracker](https://github.com/ruslanmv/FactoryAI/issues)
+- [Changelog](https://github.com/ruslanmv/FactoryAI/blob/main/CHANGELOG.md)
+- [Website](https://ruslanmv.com)
+
+---
+
+<div align="center">
+
+**Built with ❤️ by [Ruslan Magana](https://ruslanmv.com)**
+
+*Empowering developers with AI-driven automation*
+
+</div>
