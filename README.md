@@ -27,7 +27,7 @@ This program streamlines project development, offering an automated workflow to 
 - **Containerization**: Automatically generate Dockerfiles and package projects as zip files for deployment.
 - **Interactive Gradio Interface**: Provides a guided user experience for project creation.
 
-> *Note: This project implements the Standard Method as referenced in [arXiv:2411.10861](https://arxiv.org/abs/2411.10861).*
+
 
 ---
 
