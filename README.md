@@ -185,71 +185,7 @@ factoryai [command] [options]
 
 #### Available Commands
 
-| Command | Description |
-|---------|-------------|
-| `sync` | Synchronize all git submodules |
-| `status` | Show status of all components |
-| `info` | Display installation information |
-| `validate` | Validate installation and dependencies |
-| `list` | List all available components |
-| `run <component>` | Run a specific component (app, feature, debug) |
 
-#### Examples
-
-```bash
-# Synchronize submodules
-factoryai sync
-
-# Check component status
-factoryai status
-
-# Validate installation
-factoryai validate
-
-# Run Factory-App-AI
-factoryai run app
-
-# Run with verbose output
-factoryai --verbose status
-
-# Get help
-factoryai --help
-factoryai run --help
-```
-
-### Makefile Targets
-
-For convenience, common operations are available via Make:
-
-```bash
-# Show all available targets
-make help
-
-# Installation and setup
-make install          # Install FactoryAI
-make install-dev      # Install with dev dependencies
-make sync             # Sync submodules
-make dev-setup        # Complete dev environment setup
-
-# Development workflow
-make format           # Format code (black, isort, ruff)
-make lint             # Run linters (ruff, mypy)
-make test             # Run tests
-make test-cov         # Run tests with coverage
-make check            # Run lint + test
-make pre-commit       # Run format + lint + test
-
-# Component execution
-make run-app          # Run Factory-App-AI
-make run-feature      # Run Factory-Feature
-make run-debug        # Run Factory-Debug
-
-# Utilities
-make status           # Check component status
-make validate         # Validate installation
-make clean            # Clean build artifacts
-make build            # Build distribution packages
-```
 
 ---
 
@@ -491,4 +427,4 @@ limitations under the License.
 
 *Empowering developers with AI-driven automation*
 
-</div>
+This project is licensed under the [Apache 2.0 License](LICENSE).
