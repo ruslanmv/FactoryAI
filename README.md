@@ -46,7 +46,7 @@ Factory-Feature is a project that leverages Generative AI with **WatsonX.ai** to
 - **Language and Framework Agnostic**: Supports a wide range of programming languages and frameworks.
 
 By automating tedious tasks and maintaining project coherence, Factory-Feature enables rapid and reliable customization of software projects.
-> *Note: This project implements the Feature-Factory algorithm as referenced in [arXiv:2411.18226](https://arxiv.org/abs/2411.18226).*
+
 ---
 
 
